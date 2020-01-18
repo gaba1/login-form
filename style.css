@@ -1,0 +1,62 @@
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-bg {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 1000px;
+  height: 1000px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1s ease;
+  background-color: #3498db;
+}
+
+.close {
+  display: none;
+  font-size: 3rem;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  color: #eee;
+  z-index: 12;
+}
+
+.close:hover {
+  color: #eee;
+}
+
+.login {
+  display: none;
+  z-index: 11;
+  color: #eee;
+  position: relative;
+  top: 30%;
+  width: 30%;
+  margin: auto;
+}
+
+.open {
+  transform: translate(-50%, -50%) scale(2) !important;
+}
+
+.login-open {
+  display: block !important;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
